@@ -1,0 +1,50 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html><head>
+<meta content="text/html; charset=ISO-8859-1" http-equiv="content-type"><title>compare</title>
+<script lang="JavaScript">
+function showHideRubric() {
+    var rubric = document.getElementById("rubrictext");
+    if (rubric.style.display === "none") {
+        rubric.style.display = "block";
+        document.getElementById("rubriclink").innerHTML="Hide the guidelines.";
+    } else {
+        rubric.style.display = "none";
+        document.getElementById("rubriclink").innerHTML="View the comparison guidelines.";
+    }
+}
+</script>
+<style type="text/css">
+body {
+background-color: #6699aa;
+}
+table {
+background-color: white;
+}
+</style>
+</head><body>
+<%section name="status" div_id="status"%>
+<form method="post">
+<%section name="hiddenfields"%>
+<%section name="rubric" div_id="rubric"%>
+<table style="text-align: left; width: 100%;" border="1" cellpadding="2" cellspacing="2">
+<tbody>
+<tr>
+<td style="width: 50%; vertical-align:top;"><%section name="lefttext" div_call="reviewtext"%></td>
+<td style="width: 50%; vertical-align:top;"><%section name="righttext" div_call="reviewtext"%></td>
+</tr>
+<tr>
+<td style="text-align: center;"><input name="left" value="Left is better" type="submit">
+</td>
+<td style="text-align: center;"><input name="right" value="Right is better" type="submit">
+</td>
+</tr>
+<tr>
+<td style="text-align: center;" colspan="2"><input name="optout" value="I was involved in one of these, please give me a different pair to rate." type="submit">
+</td>
+</tr>
+</tbody>
+</table>
+</form>
+<%section name="extra" div_id="extra"%>
+<br>
+</body></html>

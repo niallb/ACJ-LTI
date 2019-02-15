@@ -1,0 +1,99 @@
+@import url(https://fonts.googleapis.com/css?family=Ubuntu:300,400);
+
+body {
+	background-color: #f0f1f2;
+	color: #444;
+	font-family: "Ubuntu", "Trebuchet MS", sans-serif;
+	font-weight: 300;
+	background-position: 0 50%;
+	background-repeat: no-repeat;
+	padding: 20px;
+}
+
+#editor {
+    //font-size: initial;
+    margin: 0;
+    //position: absolute;
+    top: 4px;
+    bottom: 4px;
+    height: 80%;
+    left: 4px;
+    right: 4px;
+    border: 2px solid #003377;
+}
+
+#rubric{
+   margin: 4px;
+   padding: 5px;
+   background-color:white;
+}
+
+label {
+    font-weight: 400;
+}
+
+.island {
+	border: 1px solid #DFE0E1;
+	border-radius: 4px;
+	padding: 0;
+	background-color: #fff;
+	margin-bottom: 20px;
+}
+
+.island-header {
+    padding: 5px 10px;
+    border-bottom: 1px solid #DFE0E1;
+}
+
+.island-body {
+    padding: 10px;
+}
+
+.island-footer {
+    padding: 5px 10px;
+    border-top: 1px solid #DFE0E1;
+}
+
+.island *:last-child {
+    margin-bottom: 0;
+}
+
+.container {
+	width: auto;
+	margin: 0;
+	padding: 0;
+}
+
+h1, h2, h3, h4 {
+	font-weight: 300;
+	color: #4970A0;
+	font-size: 1.6em;
+	margin-top: 0;
+	margin-bottom: 20px;
+}
+
+h2 {
+	font-size: 1.4em;
+}
+
+h3 {
+	font-size: 1.2em;
+}
+
+h4 {
+	font-size: 1em;
+}
+
+.status-row {
+    overflow: hidden;
+    margin-bottom: 10px;
+}
+
+.status-row .label {
+    display: block;
+    text-align: right;
+}
+
+.status-row .btn {
+    margin-left: 20px;
+}

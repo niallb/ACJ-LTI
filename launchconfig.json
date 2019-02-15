@@ -1,0 +1,23 @@
+{
+    "users": [
+        {
+            "name": "The Teacher",
+            "role": "Instructor"
+        },
+        {
+            "name": "Student One",
+            "role": "Learner"
+        },
+        {
+            "name": "Student Two",
+            "role": "Learner"
+        },
+        {
+            "name": "Student Three",
+            "role": "Learner"
+        }
+    ],
+    "contexts": [],
+    "key": "12345",
+    "secret": "secret"
+}
